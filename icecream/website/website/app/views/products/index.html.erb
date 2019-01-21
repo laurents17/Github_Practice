@@ -1,0 +1,10 @@
+<h2>Products Index</h2>
+
+<p>Click on a product's name to see detailed information, update, or delete.</p>
+
+    <% @products.each do |p| %>
+        <p>Name: <%= p.name %></p>
+        <p>Price: $ <%= p.price %></p>
+        <p>Last updated: <%= p.updated_at %>.</p>
+    <% end %>
+        
