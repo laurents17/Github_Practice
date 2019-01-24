@@ -13,7 +13,7 @@ class ProductsController < ApplicationController
         product.desctiption = params[:description]
         product.price = params[:price]
         product.save
-        redirect_to 'products'
+        redirect_to '/products'
     end
     
 end
